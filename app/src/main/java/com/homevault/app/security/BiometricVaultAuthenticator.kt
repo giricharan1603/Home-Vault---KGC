@@ -46,11 +46,10 @@ object BiometricVaultAuthenticator {
                 prompt.authenticate(promptInfo)
             }
             BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> {
-                onError("Set up a Fingerprint or PIN in Android Settings to use the Vault.")
+                onError("Please set up a Fingerprint or PIN in Android Settings to use the Secure Vault.")
             }
             else -> {
-                // Fallback for emulators without biometric hardware configured
-                onSuccess()
+                onError("Biometric security hardware is unavailable on this device.")
             }
         }
     }

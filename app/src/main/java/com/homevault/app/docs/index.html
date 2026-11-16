@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeVault — Smart Asset, Warranty & Life-Cycle Passport</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+<!-- Navbar -->
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="bg-indigo-600 text-white p-2 rounded-xl shadow-md">
+                <i class="fa-solid fa-vault text-xl"></i>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-slate-900">HomeVault</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+            <a href="#features" class="hover:text-indigo-600 transition">Features</a>
+            <a href="#architecture" class="hover:text-indigo-600 transition">Tech Stack</a>
+            <a href="#download" class="hover:text-indigo-600 transition">Download APK</a>
+        </div>
+        <div>
+            <a href="#download" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-semibold shadow-sm transition">
+                Get App (v1.0.2)
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative overflow-hidden pt-20 pb-24 lg:pt-32 lg:pb-36 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold mb-6 border border-indigo-100">
+            <i class="fa-solid fa-shield-halved"></i> 100% Offline-First &amp; AES-256 Encrypted
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight">
+            Never Lose a Bill, Miss a Warranty, or Fall for Repair Scams Again.
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            HomeVault is your secure Android passport for appliances, GST invoices, vehicle PUC/RC compliance records, and anti-fraud brand helplines.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#download" class="flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-2xl font-semibold shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-android text-xl"></i> Download APK (~15 MB)
+            </a>
+            <a href="#features" class="flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 px-8 py-4 rounded-2xl font-semibold transition">
+                Explore Features <i class="fa-solid fa-arrow-down text-xs"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Core Features Grid -->
+<section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Built for Indian Households &amp; Vehicles</h2>
+            <p class="mt-4 text-slate-600">Powerful on-device intelligence packed into a lightning-fast Jetpack Compose Android app.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">One-Snap GST OCR Scanner</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Instantly parses product name, brand, model number, purchase date, and GST totals offline using Google ML Kit.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Resale Passport PDF</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Generate verified A4 certificates with ownership history and attached invoice proofs for higher resale value on OLX or Cashify.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-qrcode"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Emergency Offline QR Tags</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Printable QR stickers for appliances. Scanning them displays warranty status, last service date, and official helpline offline.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Repair vs. Replace Engine</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Tracks cumulative repair costs against asset depreciation to recommend whether to fix or upgrade to a 5-Star BEE model.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-shield-dog"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Anti-Fraud Service Directory</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Verified toll-free numbers and WhatsApp support bots to protect against fraudulent online repair center scams.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Biometric Keystore Vault</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Hardware-backed fingerprint encryption securing sensitive vehicle RC, PUC, and motor insurance documents.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section id="download" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Download HomeVault APK</h2>
+        <p class="text-slate-400 max-w-xl mx-auto mb-10">Version 1.0.2 • Requires Android 8.0 (API 26) or higher. Zero ads, complete privacy.</p>
+
+        <div class="bg-slate-800/80 border border-slate-700/80 p-8 rounded-3xl max-w-xl mx-auto shadow-2xl">
+            <div class="flex items-center justify-between mb-6 pb-6 border-b border-slate-700">
+                <div class="text-left">
+                    <div class="font-semibold text-lg">homevault-v1.0.2.apk</div>
+                    <div class="text-xs text-slate-400 mt-1">SHA-256 Verified • 14.8 MB</div>
+                </div>
+                <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full">Stable Release</span>
+            </div>
+            <a href="./homevault-v1.0.2.apk" download class="flex items-center justify-center gap-3 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl font-bold transition shadow-lg shadow-indigo-600/30">
+                <i class="fa-solid fa-download"></i> Download APK Now
+            </a>
+            <p class="text-xs text-slate-400 mt-4">
+                <i class="fa-solid fa-circle-info"></i> Note: When installing, Android may prompt to allow "Install from Unknown Sources". HomeVault stores all data 100% locally on your device.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-slate-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm text-slate-500">
+        <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+            <i class="fa-solid fa-vault text-indigo-600"></i>
+            <span class="font-semibold text-slate-900">HomeVault</span>
+            <span>© 2026. All rights reserved.</span>
+        </div>
+        <div>
+            <span>Offline-First Android Asset Passport</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
